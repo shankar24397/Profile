@@ -1,5 +1,70 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	margin: 0;
+	padding: 1rem;
+    background: black;
+}
+
+article {
+	max-width: 70rem;
+	margin: 0 auto;
+	border: 0.18rem solid lightgrey;
+	padding: clamp(1rem, 2vw, 3rem);
+	border-radius: 0.5rem;
+}
+
+h1, dl {
+	margin: 0;
+}
+
+article > * + * {
+	margin-top: 1rem;
+}
+
+dl {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 1fr));
+	gap: 0.7rem;
+}
+
+dl > div {
+	background: antiquewhite;
+	padding: 0.5rem;
+}
+
+dl > div:nth-child(4n - 2) {
+	background: lavenderblush;
+}
+
+dl > div:nth-child(4n - 1) {
+	background: azure;
+}
+
+dl > div:nth-child(4n) {
+	background: lavender;
+}
+
+dt {
+	font-weight: 700;
+	font-size: 1.0srem;
+}
+
+dd {
+	margin: 0;
+}
+</style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
 <title>Shankar Asknani</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,10 +90,10 @@ body {
   color: white;
   border-width: 3px;
   border-style: solid;
-  border-image: 
+  border-image:
     linear-gradient(
-      to bottom, 
-      red, 
+      to bottom,
+      red,
       rgba(0, 0, 0, 0)
     ) 1 100%;
 }
@@ -86,7 +151,7 @@ body {
   <div class="w3-container w3-center w3-animate-top">
     <h1 title ="Data Scientist">Hi, i'm Shankar<br> Welcome!</h1>
     <img title = "Image from Vacation in UAE after Graduation." style="height:150px;width:150px;border-radius:80px;border:5px solid green" src="shankar_image.jpg" alt="Shankars1_image" class="w3-hover-grayscale">
-      
+
   </div>
 
   <div class="w3-container w3-center w3-animate-opacity">
@@ -98,8 +163,8 @@ body {
   <div class="w3-container w3-center w3-animate-right w3-hover">
   I find myself interested in automating stuff, more like Automating the entire DevOps pipeline . You can checkout my updated resume <a href="/Profile/shankar_resume.pdf" target="_blank" style="color: #3BFF34;text-decoration:None;">here</a><br>
   <br>
-  I am currently learning k8s , Docker & Terraform & working on automating usecases from different (infra) domains - Databases, Storage, Filesystem etc.<br>
-  Current tech stack includes - Ansible, Ansible Tower/AWX, Python, Jenkins, Gitlab, Postman. <i>with Docker Containerisation & k8s in future scope</i>   
+  I am currently learning k8s , Docker & Terraform & working on automating usecases from different (infra) domains - Databases, Storage, Filesystem.<br>
+  Current tech stack includes - Ansible, Ansible Tower/AWX, Python, Jenkins, Gitlab, Postman. <i>with Docker Containerisation & k8s in future scope</i>
   <br><br>
   I am always excited to learn more about <b>State of the art</b> techniques and new technologies , <b>collaborate with organizations</b> which has direct impact on people's life for a good cause.
   I try to play around with different ideas & implement them, if interested you can check out on my <a href="https://github.com/shankar24397" style="color: #3BFF34;text-decoration:None;">github</a>
@@ -107,20 +172,70 @@ body {
   <div class="w3-container w3-center w3-animate-left w3-hover-red">
   Feel free to contact me on my email - i usually reply within 24hrs, here is my email id - <i style="color:#3BFF34">asknanishankar@gmail.com</i><br>
   <br></div><br>
-  <div class="w3-container w3-center w3-animate-fading">
-  Thank you.<br>
-  Have a nice one, Cheers!</div></p>
-  </div>
+</div>
+<article>
+    <h3 style="color: whitesmoke">Current Tech Stack</h3>
+    <dl style="color: Black">
+        <div>
+            <dt>Scripting Language</dt>
+            <dd>Python</dd>
+        </div>
+        <div>
+            <dt>CI/CD tools</dt>
+            <dd>Jenkins, Gitlab CI</dd>
+        </div>
+        <div>
+            <dt>Containerization Tool</dt>
+            <dd>Docker</dd>
+        </div>
+        <div>
+            <dt>Cloud Computing Technology </dt>
+            <dd>AWS</dd>
+        </div>
+        <div>
+            <dt>Container Orchestration Tool </dt>
+            <dd>Kubernetes, Helm</dd>
+        </div>
+        <div>
+            <dt>Operating Systems</dt>
+            <dd>Linux, MacOs</dd>
+        </div>
+        <div>
+            <dt>Configuration management tool</dt>
+            <dd>Ansible</dd>
+        </div>
+        <div>
+            <dt>IaC Tool</dt>
+            <dd>Terraform</dd>
+        </div>
+        <div>
+            <dt>Artifactory</dt>
+            <dd>JFrog</dd>
+        </div>
+        <div>
+            <dt>Monitoring tool</dt>
+            <dd>Prometheus</dd>
+        </div>
+        <div>
+            <dt>Python Web Frameworks</dt>
+            <dd>Flask, Django</dd>
+        </div>
+        <div>
+            <dt>Secrets manager</dt>
+            <dd>Hashicorp Vault</dd>
+        </div>
+    </dl>
+</article><br>
+<div class="w3-container w3-center w3-animate-fading">
+    Thank you.<br>
+    Have a nice one, Cheers!</div></p>
+    </div>
 
-
-  <div class="w3-container w3-center w3-animate-zoom">
-  <a href="https://m.facebook.com/shankar.asknani" class="fa fa-facebook"></a>
-  <a href="https://mobile.twitter.com/ShankarAsknani" class="fa fa-twitter"></a>
-  <a href="https://www.linkedin.com/in/shankar-asknani-519756136" class="fa fa-linkedin"></a>
-  <a href="https://www.instagram.com/ask_o_shankara/?hl=en" class="fa fa-instagram"></a>
-  </div>
-  <br><br>
-</div>  
+    <div class="w3-container w3-center w3-animate-zoom">
+    <a href="https://m.facebook.com/shankar.asknani" class="fa fa-facebook"></a>
+    <a href="https://mobile.twitter.com/ShankarAsknani" class="fa fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/shankar-asknani-519756136" class="fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/ask_o_shankara/?hl=en" class="fa fa-instagram"></a>
+    </div><br><br>
 </body>
-<br>
 </html>
